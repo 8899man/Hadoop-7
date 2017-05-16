@@ -20,6 +20,8 @@ public class FileLoc {
         Path path = new Path("/user/qiudeyang/CachePerformanceTest/block-locations.sh");
 
         FileStatus fileStatus = hdfs.getFileStatus(path);
+        System.out.println(hdfs.getDefaultBlockSize());
+        System.out.println(hdfs.getDefaultReplication());
         BlockLocation[] blockLocations = hdfs.getFileBlockLocations(fileStatus,0,fileStatus.getLen());
         for (int i = 0; i < blockLocations.length; i++) {
             System.out.println(blockLocations[i]);

@@ -25,7 +25,9 @@
           <root url="file:///usr/local/hadoop-2.5.2/share/hadoop/hdfs" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.ideaLibSources/hadoop-hdfs-2.5.2-sources.jar!/" />
+        </SOURCES>
         <jarDirectory url="file:///usr/local/hadoop-2.5.2/share/hadoop/hdfs" recursive="false" />
       </library>
     </orderEntry>
